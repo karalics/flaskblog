@@ -14,7 +14,7 @@ class User(db.Model, UserMixin):
                          nullable=False)
     email = db.Column(db.String(120), unique=True,
                          nullable=False)
-    image_file = db.Column(db.String(20), default='default.jpg',
+    image_file = db.Column(db.String(20), default='default.png',
                            nullable=False)
     password = db.Column(db.String(60), nullable=False)
     posts = db.relationship('Post', backref='author', lazy=True)
