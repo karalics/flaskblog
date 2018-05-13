@@ -1,3 +1,10 @@
 .DS_Store
 *.db
 __pycache__/
+bin/
+static/
+!static/profile_pics/default.png
+lib/
+pip-selfcheck.json
+pyvenv.cfg
+
