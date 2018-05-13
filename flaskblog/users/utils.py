@@ -1,3 +1,11 @@
+import os
+import secrets
+from PIL import Image
+from flask import url_for, current_app
+from flask_mail import Message
+from flaskblog import mail
+
+
 def save_picture(form_picture):
     random_hex = secrets.token_hex(8)
     _, f_ext = os.path.splitext(form_picture.filename)
